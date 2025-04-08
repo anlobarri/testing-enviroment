@@ -14,6 +14,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div>
+        <p>Probando los entornos de desarollo en VERCEL</p>
         <h1>Entorno de desarrollo</h1>
         {process.env.NODE_ENV}
       </div>
