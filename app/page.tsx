@@ -3,7 +3,7 @@ export default function HomePage() {
   const previewUrl = process.env.NEXT_PUBLIC_VERCEL_URL; // Usado para preview y desarrollo con `vercel dev`
 
   let baseUrl;
-  if (process.env.NODE_ENV === "production") {
+  if (process.env.VERCEL_ENV === "production") {
     baseUrl = productionUrl;
   } else {
     baseUrl = previewUrl;
@@ -16,7 +16,7 @@ export default function HomePage() {
       <div>
         <p>Probando los entornos de desarollo en VERCEL</p>
         <h1>Entorno de desarrollo</h1>
-        {process.env.NODE_ENV}
+        {process.env.VERCEL_ENV}
       </div>
       <div>
         <h2>Variables de entorno</h2>
