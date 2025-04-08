@@ -7,7 +7,8 @@ export default function HomePage() {
       </div>
       <div>
         <h2>Variables de entorno</h2>
-        {process.env.NEXT_PUBLIC_VERCEL_URL || "http://localhost:3000"}
+        {process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL ||
+          "http://localhost:3000"}
       </div>
     </div>
   );
